@@ -1,5 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+
 #include "Tank.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
@@ -29,39 +30,46 @@ void ATank::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
 
-    if (PlayerControllerRef)
+    if (TankPlayerController)
     {
         FHitResult HitResult;
-        PlayerControllerRef->GetHitResultUnderCursor(
-            ECollisionChannel::ECC_Visibility,
+        TankPlayerController->GetHitResultUnderCursor(
+            ECollisionChannel::ECC_Visibility, 
             false, 
-            HitResult
-        );
+            HitResult);
 
-       RotateTurret(HitResult.ImpactPoint);
-
+        RotateTurret(HitResult.ImpactPoint);
     }
+}
+
+void ATank::HandleDestruction()
+{
+    Super::HandleDestruction();
+    SetActorHiddenInGame(true);
+    SetActorTickEnabled(false);
 }
 
 void ATank::BeginPlay()
 {
     Super::BeginPlay();
 
-    PlayerControllerRef = Cast<APlayerController>(GetController());
+    TankPlayerController = Cast<APlayerController>(GetController());
 }
 
 void ATank::Move(float Value)
 {
-    FVector DeltaLocation = FVector::ZeroVector; // ignore if uninitialised in video
+    FVector DeltaLocation = FVector::ZeroVector;
     // X = Value * DeltaTime * Speed
     DeltaLocation.X = Value * Speed * UGameplayStatics::GetWorldDeltaSeconds(this);
     AddActorLocalOffset(DeltaLocation, true);
+    
 }
 
 void ATank::Turn(float Value)
 {
-    FRotator DeltaRotation = FRotator::ZeroRotator; // ignore if uninitialised in video
+    FRotator DeltaRotation = FRotator::ZeroRotator;
+    // Yaw = Value * DeltaTime * TurnRate
     DeltaRotation.Yaw = Value * TurnRate * UGameplayStatics::GetWorldDeltaSeconds(this);
     AddActorLocalRotation(DeltaRotation, true);
+    GetController();
 }
-

@@ -9,14 +9,20 @@
 void ATower::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
-    
-    if(InFireRange())
+
+    if (InFireRange())
     {
         RotateTurret(Tank->GetActorLocation());
     }
 }
 
-void ATower::BeginPlay() 
+void ATower::HandleDestruction()
+{
+    Super::HandleDestruction();
+    Destroy();
+}
+
+void ATower::BeginPlay()
 {
     Super::BeginPlay();
 
@@ -27,7 +33,7 @@ void ATower::BeginPlay()
 
 void ATower::CheckFireCondition()
 {
-    if(InFireRange())
+    if (InFireRange())
     {
         Fire();
     }
@@ -38,10 +44,11 @@ bool ATower::InFireRange()
     if (Tank)
     {
         float Distance = FVector::Dist(GetActorLocation(), Tank->GetActorLocation());
-        if (Distance <=  FireRange)
+        if (Distance <= FireRange)
         {
             return true;
         }
     }
+
     return false;
 }
