@@ -15,7 +15,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+				"cwd": "E:\\Epic Games\\UE_5.2"
 			}
 		},
 		{
@@ -35,7 +35,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+				"cwd": "E:\\Epic Games\\UE_5.2"
 			}
 		},
 		{
@@ -52,7 +52,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+				"cwd": "E:\\Epic Games\\UE_5.2"
 			}
 		},
 		{
@@ -69,7 +69,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+				"cwd": "E:\\Epic Games\\UE_5.2"
 			}
 		},
 		{
@@ -89,7 +89,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+				"cwd": "E:\\Epic Games\\UE_5.2"
 			}
 		},
 		{
@@ -106,7 +106,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+				"cwd": "E:\\Epic Games\\UE_5.2"
 			}
 		},
 		{
@@ -123,7 +123,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+				"cwd": "E:\\Epic Games\\UE_5.2"
 			}
 		},
 		{
@@ -143,7 +143,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+				"cwd": "E:\\Epic Games\\UE_5.2"
 			}
 		},
 		{
@@ -160,7 +160,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+				"cwd": "E:\\Epic Games\\UE_5.2"
 			}
 		},
 		{
@@ -177,7 +177,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+				"cwd": "E:\\Epic Games\\UE_5.2"
 			}
 		},
 		{
@@ -197,7 +197,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+				"cwd": "E:\\Epic Games\\UE_5.2"
 			}
 		},
 		{
@@ -214,7 +214,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+				"cwd": "E:\\Epic Games\\UE_5.2"
 			}
 		},
 		{
@@ -231,7 +231,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+				"cwd": "E:\\Epic Games\\UE_5.2"
 			}
 		},
 		{
@@ -251,7 +251,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+				"cwd": "E:\\Epic Games\\UE_5.2"
 			}
 		},
 		{
@@ -268,277 +268,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
-			}
-		},
-		{
-			"label": "ToonTanks HoloLens Debug Build",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"ToonTanks",
-				"HoloLens",
-				"Debug",
-				"C:\\Users\\Jon10\\OneDrive\\Documents\\GitHub\\Unreal Projects\\ToonTanks\\ToonTanks.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
-			}
-		},
-		{
-			"label": "ToonTanks HoloLens Debug Rebuild",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"ToonTanks",
-				"HoloLens",
-				"Debug",
-				"C:\\Users\\Jon10\\OneDrive\\Documents\\GitHub\\Unreal Projects\\ToonTanks\\ToonTanks.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"dependsOn": [
-				"ToonTanks HoloLens Debug Clean"
-			],
-			"type": "shell",
-			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
-			}
-		},
-		{
-			"label": "ToonTanks HoloLens Debug Clean",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
-			"args": [
-				"ToonTanks",
-				"HoloLens",
-				"Debug",
-				"C:\\Users\\Jon10\\OneDrive\\Documents\\GitHub\\Unreal Projects\\ToonTanks\\ToonTanks.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
-			}
-		},
-		{
-			"label": "ToonTanks HoloLens DebugGame Build",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"ToonTanks",
-				"HoloLens",
-				"DebugGame",
-				"C:\\Users\\Jon10\\OneDrive\\Documents\\GitHub\\Unreal Projects\\ToonTanks\\ToonTanks.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
-			}
-		},
-		{
-			"label": "ToonTanks HoloLens DebugGame Rebuild",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"ToonTanks",
-				"HoloLens",
-				"DebugGame",
-				"C:\\Users\\Jon10\\OneDrive\\Documents\\GitHub\\Unreal Projects\\ToonTanks\\ToonTanks.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"dependsOn": [
-				"ToonTanks HoloLens DebugGame Clean"
-			],
-			"type": "shell",
-			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
-			}
-		},
-		{
-			"label": "ToonTanks HoloLens DebugGame Clean",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
-			"args": [
-				"ToonTanks",
-				"HoloLens",
-				"DebugGame",
-				"C:\\Users\\Jon10\\OneDrive\\Documents\\GitHub\\Unreal Projects\\ToonTanks\\ToonTanks.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
-			}
-		},
-		{
-			"label": "ToonTanks HoloLens Development Build",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"ToonTanks",
-				"HoloLens",
-				"Development",
-				"C:\\Users\\Jon10\\OneDrive\\Documents\\GitHub\\Unreal Projects\\ToonTanks\\ToonTanks.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
-			}
-		},
-		{
-			"label": "ToonTanks HoloLens Development Rebuild",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"ToonTanks",
-				"HoloLens",
-				"Development",
-				"C:\\Users\\Jon10\\OneDrive\\Documents\\GitHub\\Unreal Projects\\ToonTanks\\ToonTanks.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"dependsOn": [
-				"ToonTanks HoloLens Development Clean"
-			],
-			"type": "shell",
-			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
-			}
-		},
-		{
-			"label": "ToonTanks HoloLens Development Clean",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
-			"args": [
-				"ToonTanks",
-				"HoloLens",
-				"Development",
-				"C:\\Users\\Jon10\\OneDrive\\Documents\\GitHub\\Unreal Projects\\ToonTanks\\ToonTanks.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
-			}
-		},
-		{
-			"label": "ToonTanks HoloLens Test Build",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"ToonTanks",
-				"HoloLens",
-				"Test",
-				"C:\\Users\\Jon10\\OneDrive\\Documents\\GitHub\\Unreal Projects\\ToonTanks\\ToonTanks.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
-			}
-		},
-		{
-			"label": "ToonTanks HoloLens Test Rebuild",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"ToonTanks",
-				"HoloLens",
-				"Test",
-				"C:\\Users\\Jon10\\OneDrive\\Documents\\GitHub\\Unreal Projects\\ToonTanks\\ToonTanks.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"dependsOn": [
-				"ToonTanks HoloLens Test Clean"
-			],
-			"type": "shell",
-			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
-			}
-		},
-		{
-			"label": "ToonTanks HoloLens Test Clean",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
-			"args": [
-				"ToonTanks",
-				"HoloLens",
-				"Test",
-				"C:\\Users\\Jon10\\OneDrive\\Documents\\GitHub\\Unreal Projects\\ToonTanks\\ToonTanks.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
-			}
-		},
-		{
-			"label": "ToonTanks HoloLens Shipping Build",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"ToonTanks",
-				"HoloLens",
-				"Shipping",
-				"C:\\Users\\Jon10\\OneDrive\\Documents\\GitHub\\Unreal Projects\\ToonTanks\\ToonTanks.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
-			}
-		},
-		{
-			"label": "ToonTanks HoloLens Shipping Rebuild",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"ToonTanks",
-				"HoloLens",
-				"Shipping",
-				"C:\\Users\\Jon10\\OneDrive\\Documents\\GitHub\\Unreal Projects\\ToonTanks\\ToonTanks.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"dependsOn": [
-				"ToonTanks HoloLens Shipping Clean"
-			],
-			"type": "shell",
-			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
-			}
-		},
-		{
-			"label": "ToonTanks HoloLens Shipping Clean",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
-			"args": [
-				"ToonTanks",
-				"HoloLens",
-				"Shipping",
-				"C:\\Users\\Jon10\\OneDrive\\Documents\\GitHub\\Unreal Projects\\ToonTanks\\ToonTanks.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+				"cwd": "E:\\Epic Games\\UE_5.2"
 			}
 		},
 		{
@@ -555,7 +285,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+				"cwd": "E:\\Epic Games\\UE_5.2"
 			}
 		},
 		{
@@ -575,7 +305,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+				"cwd": "E:\\Epic Games\\UE_5.2"
 			}
 		},
 		{
@@ -592,7 +322,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+				"cwd": "E:\\Epic Games\\UE_5.2"
 			}
 		},
 		{
@@ -609,7 +339,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+				"cwd": "E:\\Epic Games\\UE_5.2"
 			}
 		},
 		{
@@ -629,7 +359,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+				"cwd": "E:\\Epic Games\\UE_5.2"
 			}
 		},
 		{
@@ -646,7 +376,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+				"cwd": "E:\\Epic Games\\UE_5.2"
 			}
 		},
 		{
@@ -663,7 +393,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+				"cwd": "E:\\Epic Games\\UE_5.2"
 			}
 		},
 		{
@@ -683,7 +413,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+				"cwd": "E:\\Epic Games\\UE_5.2"
 			}
 		},
 		{
@@ -700,7 +430,7 @@
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+				"cwd": "E:\\Epic Games\\UE_5.2"
 			}
 		}
 	]
